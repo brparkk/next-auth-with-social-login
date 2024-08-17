@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
-import { Inter, Noto_Sans } from 'next/font/google';
-import './globals.css';
 import { SessionProvider } from 'next-auth/react';
+import { Noto_Sans } from 'next/font/google';
+import './globals.css';
 
 const notoSans = Noto_Sans();
 
@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="ko">
       <body className={notoSans.className}>
         <SessionProvider>{children}</SessionProvider>
       </body>
